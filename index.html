@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이서준 — 풀스택 웹 개발자</title>
+    <meta
+      name="description"
+      content="풀스택 웹 개발자 이서준. 사용자가 매일 쓰는 서비스의 속도와 안정성을 만듭니다."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+
+    <div class="layout">
+      <header class="intro">
+        <div>
+          <a class="intro__avatar" href="#about" aria-label="About 섹션으로 이동">
+            <img src="P.png" alt="" width="112" height="112" />
+          </a>
+          <h1 class="intro__name">
+            <a href="#about">이서준</a>
+          </h1>
+          <h2 class="intro__title">풀스택 웹 개발자</h2>
+          <p class="intro__blurb">
+            사용자가 매일 쓰는 서비스의 속도와 안정성을 만드는 일에 보람을
+            느낍니다.
+          </p>
+
+          <nav class="nav" aria-label="In-page jump links">
+            <ul>
+              <li>
+                <a class="nav__link is-active" href="#about"
+                  ><span class="nav__indicator"></span
+                  ><span class="nav__label">About</span></a
+                >
+              </li>
+              <li>
+                <a class="nav__link" href="#experience"
+                  ><span class="nav__indicator"></span
+                  ><span class="nav__label">Experience</span></a
+                >
+              </li>
+              <li>
+                <a class="nav__link" href="#projects"
+                  ><span class="nav__indicator"></span
+                  ><span class="nav__label">Projects</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="social" aria-label="Social media">
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub (opens in a new tab)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn (opens in a new tab)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:seojun.lee@example.com"
+              aria-label="Email"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <main id="content" class="content">
+        <section id="about" class="section" aria-label="About me">
+          <div class="section__heading sticky-label">
+            <h2>About</h2>
+          </div>
+          <div class="about">
+            <div class="about__copy">
+              <p>
+                안녕하세요. 사용자가 매일 쓰는 서비스의 속도와 안정성을 만드는
+                일에 보람을 느끼는 개발자 <strong>이서준</strong>입니다. 대학에서
+                소프트웨어공학을 전공한 뒤, IT 서비스 기업에서 웹 서비스 개발을
+                담당해 왔습니다.
+              </p>
+              <p>
+                React와 Node.js를 중심으로 프론트엔드·백엔드를 함께 다루며,
+                기능을 빠르게 내는 것만큼 <strong>읽기 쉬운 코드</strong>와
+                <strong>예측 가능한 배포</strong>를 중요하게 생각합니다. 제품
+                중심으로 기술을 쌓고, 팀 단위로 문제를 풀어 가는 환경에서 서비스
+                품질을 높이는 데 기여하고 싶습니다.
+              </p>
+              <p>
+                작업할 때는 장애와 성능 이슈의 원인을 끝까지 파고들고, 혼자만
+                아는 지식을 줄이기 위해 메모와 API 명세를 남깁니다. 생활신조는
+                <strong>“작게 배포하고, 빠르게 배우기”</strong>입니다. 안전한
+                범위에서 자주 배포하고, 측정과 회고로 다음 결정을 더 잘 내리는
+                개발자가 되고자 합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="section" aria-label="Work experience">
+          <div class="section__heading sticky-label">
+            <h2>Experience</h2>
+          </div>
+          <ol class="experience-list">
+            <li>
+              <article class="card group">
+                <header class="card__meta">
+                  <span>2023 — Present</span>
+                </header>
+                <div class="card__body">
+                  <h3>
+                    <a class="card__title" href="#experience">
+                      풀스택 웹 개발자
+                      <span class="card__company">· IT 서비스 기업</span>
+                      <span class="card__arrow" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </h3>
+                  <p>
+                    웹 서비스의 프론트엔드·백엔드를 함께 담당하며 기능 개발과
+                    운영을 이어 가고 있습니다. 주문·결제 흐름 API를 개선해
+                    평균 응답 시간을 약 30% 줄였고, 공통 컴포넌트와 테스트
+                    기반을 정리해 기능 추가 속도를 높였습니다.
+                  </p>
+                  <ul class="tags" aria-label="Technologies used">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                    <li>NestJS</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="card group">
+                <header class="card__meta">
+                  <span>사내 · Side</span>
+                </header>
+                <div class="card__body">
+                  <h3>
+                    <span class="card__title card__title--static">
+                      주니어 온보딩 · 사이드 프로젝트
+                    </span>
+                  </h3>
+                  <p>
+                    오픈소스 이슈 해결과 사이드 프로젝트로 TypeScript·테스트
+                    습관을 이어 가고 있습니다. 사내에서는 주니어 온보딩 문서를
+                    정리해 신규 입사자의 환경 세팅 시간을 줄이는 데 기여했습니다.
+                  </p>
+                  <ul class="tags" aria-label="Technologies used">
+                    <li>TypeScript</li>
+                    <li>Docker</li>
+                    <li>AWS</li>
+                    <li>Redis</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="card group">
+                <header class="card__meta">
+                  <span>Graduation</span>
+                </header>
+                <div class="card__body">
+                  <h3>
+                    <span class="card__title card__title--static">
+                      API · Auth Lead · 교내 동아리 웹
+                    </span>
+                  </h3>
+                  <p>
+                    졸업 프로젝트로 교내 동아리 일정·출석을 관리하는 웹 서비스를
+                    만들었습니다. API 설계와 인증을 맡았고, 실제 동아리 운영에
+                    배포해 한 학기 동안 사용해 보며 요구사항 변경에 대응하는
+                    경험을 쌓았습니다.
+                  </p>
+                  <ul class="tags" aria-label="Technologies used">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ol>
+
+          <div class="section-link">
+            <a href="#projects">
+              View Projects
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section id="projects" class="section" aria-label="Selected projects">
+          <div class="section__heading sticky-label">
+            <h2>Projects</h2>
+          </div>
+          <ul class="project-list">
+            <li>
+              <article class="card card--project group">
+                <div class="project-thumb" aria-hidden="true">
+                  <div class="project-thumb__frame">API</div>
+                </div>
+                <div class="card__body">
+                  <h3>
+                    <a class="card__title" href="#projects">
+                      주문·결제 API 성능 개선
+                      <span class="card__arrow" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </h3>
+                  <p>
+                    주문·결제 흐름의 API를 점검하고 병목을 줄여 평균 응답
+                    시간을 약 30% 단축했습니다. 공통 컴포넌트와 테스트 기반을
+                    정리해 이후 기능 추가 속도도 함께 끌어올렸습니다.
+                  </p>
+                  <ul class="tags">
+                    <li>Node.js</li>
+                    <li>NestJS</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="card card--project group">
+                <div class="project-thumb" aria-hidden="true">
+                  <div class="project-thumb__frame">Club</div>
+                </div>
+                <div class="card__body">
+                  <h3>
+                    <a class="card__title" href="#projects">
+                      동아리 일정·출석 웹 서비스
+                      <span class="card__arrow" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </h3>
+                  <p>
+                    교내 동아리 운영을 위한 일정·출석 관리 웹을 설계·구현하고
+                    실제 학기 운영에 배포했습니다. 인증과 API 설계를 맡으며
+                    요구사항 변경에 유연하게 대응하는 경험을 쌓았습니다.
+                  </p>
+                  <ul class="tags">
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="card card--project group">
+                <div class="project-thumb" aria-hidden="true">
+                  <div class="project-thumb__frame">Docs</div>
+                </div>
+                <div class="card__body">
+                  <h3>
+                    <span class="card__title card__title--static">
+                      주니어 온보딩 문서 체계화
+                    </span>
+                  </h3>
+                  <p>
+                    신규 입사자가 환경을 세팅하는 데 걸리는 시간을 줄이기 위해
+                    온보딩 문서를 정리했습니다. 혼자만 아는 지식을 줄이고 팀이
+                    더 빨리 기여할 수 있는 기반을 만드는 데 초점을 맞췄습니다.
+                  </p>
+                  <ul class="tags">
+                    <li>Documentation</li>
+                    <li>Developer Experience</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section section--closing" aria-label="Closing">
+          <p class="closing">
+            입사 후에는 코드베이스와 도메인, 배포·모니터링 흐름을 빠르게 익혀
+            안정적으로 티켓을 소화하는 팀원이 되고, 중장기적으로는
+            프론트·백엔드를 잇는 설계 감각으로 서비스 확장성과 개발 경험을
+            개선하는 역할을 하고 싶습니다.
+          </p>
+          <p class="footnote">
+            Inspired by
+            <a
+              href="https://brittanychiang.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Brittany Chiang</a
+            >. Built with HTML, CSS, and JavaScript. Typeface:
+            <a
+              href="https://rsms.me/inter/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Inter</a
+            >.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
